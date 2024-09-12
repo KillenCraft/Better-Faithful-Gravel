@@ -1,0 +1,48 @@
+defaultTasks 'build'
+
+subprojects {
+    apply plugin: 'base'
+
+    version = rootProject.version
+
+    // Set a common build directory for all subprojects
+    buildDir = "${rootProject.projectDir}/out"
+
+    // Define variables for common directory, loose directory, and root project files
+    def commonDir = "${rootProject.projectDir}/${project.findProperty('commonDir') ?: 'common'}"
+    def rootProjectFiles = project.findProperty('rootProjectFiles')?.split(',') ?: []
+    def excludePatterns = project.findProperty('excludePatterns')?.split(',') ?: []
+
+    // Define a sync task in each subproject
+    tasks.register('zipPack', Zip) {
+        includeEmptyDirs = false
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+        group = 'Build'
+        description = "Builds the resource pack for MC version ${project.name}."
+
+        // Set the output file name and location
+        destinationDirectory.set(buildDir)
+        archiveBaseName = rootProject.name
+        archiveAppendix.set(project.findProperty('archiveAppendix') ?: "MC${project.name}")
+
+
+        // Include files from the project directory
+        from(projectDir)
+        // Include files from the common directory
+        from(commonDir)
+        // Include files specified in the rootProjectFiles property
+        rootProjectFiles.each { fileName ->
+            from("${rootProject.projectDir}/${fileName.trim()}")
+        }
+
+        // Exclude unnecessary files
+        excludePatterns.each { pattern ->
+            exclude pattern.trim()
+        }
+    }
+
+    // Add the zip task to the default tasks
+    tasks.named('assemble').configure {
+        dependsOn tasks.named('zipPack')
+    }
+}
