@@ -28,15 +28,15 @@
     <img src="logo.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">Some Dark Corner</h3>
+  <h3 align="center">Killen Customs</h3>
 
   <p align="center">
-    Dark-themed GUI screens for Minecraft
+    Customized Textures for Minecraft
     <br />
     <br />
-    <a href="https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/issues">Report Bug</a>
+    <a href="https://github.com/KillenCraft/KillenCustom/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/issues">Request Feature</a>
+    <a href="https://github.com/KillenCraft/KillenCustom/issues">Request Feature</a>
   </p>
 </p>
 
@@ -73,15 +73,15 @@ Project Link: [https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner](
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/scottkillen-boilerplate/Resource-Pack-Template.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/KillenCraft/KillenCustom.svg?style=flat-square
 [contributors-url]: https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/scottkillen-boilerplate/Resource-Pack-Template.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/KillenCraft/KillenCustom.svg?style=flat-square
 [forks-url]: https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/network/members
-[stars-shield]: https://img.shields.io/github/stars/scottkillen-boilerplate/Resource-Pack-Template.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/KillenCraft/KillenCustom.svg?style=flat-square
 [stars-url]: https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/stargazers
-[issues-shield]: https://img.shields.io/github/issues/scottkillen-boilerplate/Resource-Pack-Template.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/KillenCraft/KillenCustom.svg?style=flat-square
 [issues-url]: https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/issues
-[license-shield]: https://img.shields.io/github/license/scottkillen-boilerplate/Resource-Pack-Template.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/KillenCraft/KillenCustom.svg?style=flat-square
 [license-url]: https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/blob/master/LICENSE.md
 [code-of-conduct-shield]: https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-square
 [code-of-conduct-url]: https://github.com/ScottKillen/MC-ResourcePack-Some-Dark-Corner/blob/master/CODE_OF_CONDUCT.md
